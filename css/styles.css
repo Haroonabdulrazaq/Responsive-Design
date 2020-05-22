@@ -32,21 +32,39 @@ body {
 .fix-nav-right i {
   padding: 0 0.2em;
   font-size: 1.5em;
-} 
-
-.sweatpants {
-  background: #daa520;
-  height: 4vh;
+  border-left: 1px solid #888;
 }
 
-.main-section {
+.main-wrapper {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr;
+  padding: 1em;
+  height: auto;
 }
-.hero-img {
-  height: 20vh;
-  background: darkcyan;
-  border: 1px solid black;
+
+.hero-img-1 {
+  background: url("../images/roman-kraft-_Zua2hyvTBk-unsplash.jpg");
+}
+
+.hero-img-2 {
+  background: url("../images/covid.jpg");
+}
+
+.hero-img-3 {
+  background: url("../images/Mobile-phone.jpg");
+  background-position: center;
+}
+
+.header-img {
+  background-size: cover;
+  margin-bottom: 1em;
+}
+
+.img-text {
+  width: 70%;
+  margin: 5em auto 0;
+  font-size: 1.2em;
+  font-weight: bolder;
   color: white;
 }
