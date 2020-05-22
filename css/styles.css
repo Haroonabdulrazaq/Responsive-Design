@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.disappear {
+  display: none;
+}
+.navigation {
+}
+.fix-nav {
+  background: black;
+  height: 10vh;
+}
+
+.img-logo {
+  width: 50px;
+  height: 50px;
+  background: url("../images/the-next-web-tnw-logo.png");
+}
+
+.sweatpants {
+  background: #daa520;
+  height: 4vh;
+}
+
+.main-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.hero-img {
+  height: 20vh;
+  background: darkcyan;
+  color: white;
+}
