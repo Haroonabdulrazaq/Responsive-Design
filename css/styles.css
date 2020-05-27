@@ -4,10 +4,9 @@
   margin: 0;
 }
 
-
 @font-face {
-  font-family: 'avalon';
-  src: url('../fonts/Avalon.woff2') format('woff2'), /* Super Modern Browsers */
+  font-family: "avalon";
+  src: url("../fonts/Avalon.woff2") format("woff2"); /* Super Modern Browsers */
 }
 
 body {
@@ -15,8 +14,7 @@ body {
 }
 
 .heading2 {
-  font-family: 'avalon', sans-serif;
-  color: red;
+  font-family: "avalon", sans-serif;
   font-weight: 800;
   font-size: 2em;
   padding-bottom: 1em;
@@ -121,20 +119,68 @@ body {
   grid-gap: 10px;
 }
 
-.news-img img{
-  width:100%;
+.news-img img {
+  width: 100%;
   height: 12vh;
 }
 
 .news-text-author p {
-  font-size: 1em;
+  font-size: 0.8em;
   font-weight: bold;
-  line-height: 1.5em;
-  padding-bottom: 0.6em;
+  line-height: 1.2em;
+  padding-bottom: 0.4em;
 }
 
 .news-text-author span {
-  font-size: 1em;
+  font-size: 0.8em;
   color: #888;
 }
+/* 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Funding Section styling
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
+.funding {
+  background: lawngreen;
+  display: ;
+  padding: 0 1em;
+  height: 100vh;
+}
+
+.funding-links li {
+  list-style-type: none;
+  padding: 0.3em;
+}
+.orange {
+  color: #f42;
+}
+
+.cinchy {
+  height: 40vh;
+  background: white;
+  position: relative;
+}
+.cinchy-anchor {
+  text-decoration: none;
+  color: white;
+}
+.cinchy-img {
+  position: absolute;
+  width: 4em;
+  height: 4em;
+  top: 1em;
+  left: 1em;
+}
+
+.cinchy-anchor h2 {
+  display: block;
+  padding: 0.6em 5em;
+  font-size: 1.2em;
+  background: #f42;
+}
+.series-div {
+  background: rgba(255, 68, 34, 0.08);
+  color: #000;
+  height: 10vh;
+  padding: 0.6em 6em;
+}
