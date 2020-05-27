@@ -4,11 +4,6 @@
   margin: 0;
 }
 
-@font-face {
-  font-family: "avalon";
-  src: url("../fonts/Avalon.woff2") format("woff2"); /* Super Modern Browsers */
-}
-
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -17,12 +12,40 @@ a {
   text-decoration: none;
   color: #555;
 }
+
+.mb-0 {
+  margin-bottom: 0em;
+} 
+
+.mb-1 {
+  margin-bottom: 1em;
+}
+
+.pb-0-8 {
+  padding-bottom: 0.8em;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.round-btn {
+  height:3em;
+  width:3em;
+  background-color: #666;
+  border-radius: 50%;
+}
+
+.round-btn:hover {
+  background-color: #333;
+  border: solid 1px #666;
+}
+
 ul li {
   list-style-type: none;
 }
 
 .heading2 {
-  font-family: "avalon", sans-serif;
   font-weight: 800;
   font-size: 2em;
   padding-bottom: 1em;
@@ -30,6 +53,10 @@ ul li {
 
 .heading2:hover {
   color: #000;
+}
+
+main {
+  padding:1em;
 }
 
 .disappear {
@@ -67,7 +94,6 @@ ul li {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  padding: 1em;
   height: auto;
 }
 
@@ -86,7 +112,6 @@ ul li {
 
 .header-img {
   background-size: cover;
-  margin-bottom: 1em;
   position: relative;
   height: 30vh;
 }
@@ -108,10 +133,6 @@ ul li {
   width: 100%;
   height: 100%;
   z-index: 1;
-}
-
-.latest-news {
-  padding: 1em;
 }
 
 .news-container {
@@ -148,10 +169,6 @@ ul li {
 Funding Section styling
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
-.funding {
-  padding: 0 1em;
-  height: 100vh;
-}
 .funding-links {
   margin-bottom: 1em;
 }
@@ -209,4 +226,87 @@ Funding Section styling
 .below-cinchy a {
   padding: 0.5em;
   display: block;
+}
+
+
+/*
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  APP SECTION STYLE 
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ */
+
+.app-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(1fr, 8);
+}
+
+.header-img .overlay h4 {
+  color: white;
+  margin-top: 8em;
+  margin-left: 1em;
+}
+
+.header-img .overlay .app-img-text {
+  color: white;
+  width: 70%;
+  font-size: 1.2em;
+  font-weight: bolder;
+  margin-left: 1em;
+}
+
+.header-img .overlay span {
+  color: #888;
+  margin-left: 1em;
+}
+
+.app .below-app-image {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.description {
+  padding: 1em;
+  background-color: rgb(241, 173, 173);
+}
+
+.description h4 {
+  font-size: 0.8em;
+}
+
+.description p {
+  font-size: 0.8em;
+  font-weight: 600;
+}
+
+.app-small-img img {
+  width:100%;
+  height:11vh;
+}
+
+.app-features ul li {
+  display: list-item;
+  list-style-type: disc;
+  list-style-position: inside;
+  color: #666;
+}
+
+
+.latest-deals-header a {
+  margin-left: 3.5em;
+}
+
+
+.icons-links {
+  background-color: #333;
+}
+
+footer .icons-links .icons a{
+  color: white;
+}
+
+footer .icons-links .icons {
+  display: flex;
+  justify-content: center;
 }
