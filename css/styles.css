@@ -18,7 +18,10 @@ body {
   display: flex;
   justify-content: space-between;
 }
-
+.sweatpants {
+  background: yellow;
+  font-size: 0.8em;
+}
 .fix-nav-left img {
   width: 5em;
   height: 5em;
@@ -32,6 +35,7 @@ body {
 .fix-nav-right i {
   padding: 0 0.2em;
   font-size: 1.5em;
+  color: #888;
   border-left: 1px solid #888;
 }
 
@@ -48,17 +52,19 @@ body {
 }
 
 .hero-img-2 {
-  background: url("../images/covid.jpg");
+  background: url("../images/Mobile-phone.jpg");
+  background-position: center;
 }
 
 .hero-img-3 {
-  background: url("../images/Mobile-phone.jpg");
-  background-position: center;
+  background: url("../images/covid.jpg");
 }
 
 .header-img {
   background-size: cover;
   margin-bottom: 1em;
+  position: relative;
+  height: 30vh;
 }
 
 .img-text {
@@ -67,4 +73,15 @@ body {
   font-size: 1.2em;
   font-weight: bolder;
   color: white;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(rgb(218, 43, 43), #000);
+  opacity: 0.8;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
 }
