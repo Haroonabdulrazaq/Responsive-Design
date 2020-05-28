@@ -26,6 +26,11 @@ a {
   padding-bottom: 0.8em;
 }
 
+.position-fixed {
+  position: fixed;
+}
+
+
 .inline-block {
   display: inline-block;
 }
@@ -66,9 +71,8 @@ main {
 
 .navigation {
   width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
+  /* top: 0;
+  left: 0; */
   z-index: 2;
   height: 10vh;
   display: grid;
@@ -76,7 +80,7 @@ main {
   grid-template-rows: 1fr 1fr;
 }
 
-.fix-nav {
+.fix-nav-mobile {
   background-color: white;
   display: flex;
   justify-content: space-between;
@@ -86,6 +90,13 @@ main {
   font-size: 0.8em;
   padding: 0.5em;
 }
+
+.fix-nav-left {
+  display: flex;
+  justify-content: flex-start;
+  flex:2;
+}
+
 .fix-nav-left img {
   width: 5em;
   height: 5em;
@@ -94,6 +105,8 @@ main {
 .fix-nav-right {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
+  flex:1;
 }
 
 .fix-nav-right i {
@@ -153,13 +166,11 @@ main {
 
 .news-container {
   display: grid;
-  /* grid-template-rows: repeat(1fr, 8); */
   grid-template-columns: 1fr;
 }
 
 .news {
   display: grid;
-  /* grid-template-rows: 1fr; */
   grid-template-columns: 1fr 3fr;
   grid-gap: 10px;
 }
@@ -360,3 +371,61 @@ Funding Section styling
   text-align: center;
   padding-top: 1em;
 }
+/* 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  MEDIA QUERIES FOR IPAD
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+  .fix-nav-mobile {
+    display: none;
+  }
+
+  .nav-big-screen {
+    background-color: #000;
+    height: 3vh;
+  }
+
+  .nav-big-screen .upper-nav {
+    display:flex;
+    align-items: center;
+  }
+
+  .nav-big-screen .upper-nav ul li {
+    display: inline-block;
+    font-size: 1em;
+    padding: 0em 0.2em;
+  }
+
+  .nav-big-screen .upper-nav ul li a {
+    color: white;
+  }
+
+  .fix-nav-big-screen {
+    display: flex;
+    height: 8vh;
+  }
+
+  .fix-nav-big-screen ul li {
+    display: inline-block;
+    font-size: 1.2em;
+    padding: 0em 0.2em;
+  }
+  
+  .fix-nav-big-screen ul li a {
+    color: #444
+  }
+
+  .fix-nav-big-screen .last-link {
+    display: none;
+  }
+
+  /* .sweatpants {
+    display: none;
+  } */
+
+}
+
+
