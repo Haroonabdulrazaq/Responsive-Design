@@ -64,18 +64,33 @@ main {
 }
 
 .fix-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
   background-color: white;
-  height: 10vh;
+  height: auto;
   display: flex;
   justify-content: space-between;
+  margin-top: 3vh;
+}
+.white-nav-links {
+  display: none;
 }
 .sweatpants {
+  position: fixed;
+  top: 10vh;
+  left: 0;
+  width: 100%;
   background: yellow;
   font-size: 0.8em;
+  padding: 0.5em;
+  margin-top: 1vh;
+  z-index: 2;
 }
 .fix-nav-left img {
   width: 5em;
-  height: 5em;
+  height: auto;
 }
 
 .fix-nav-right {
@@ -104,7 +119,8 @@ main {
 .hero-img-2 {
   background: url("../images/Mobile-phone.jpg");
   background-position: center;
-}.disappear {
+}
+.disappear {
   display: none;
 }
 
@@ -345,4 +361,47 @@ Funding Section styling
 .footer-footnote p {
   text-align: center;
   padding-top: 1em;
+}
+
+/* and (max-device-width : 1024px)  */
+
+@media only screen and (min-device-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+
+  .navigation {
+    height: auto;
+    width: 100%;
+    margin-bottom: 10vh;
+  }
+
+  .black-nav-links {
+    display: none;
+  }
+
+  .white-nav-links {
+    display: inline-block;
+    padding: 1em;
+    margin-top: 0;
+  }
+  .ul-white-nav li {
+    display: inline-block;
+    height: 100%;
+    font-size: 1.2em;
+    padding: 0.5em;
+    color: #666;
+  }
+  .black-nav-links {
+    background: #000;
+    color: white;
+    height: 3vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .black-nav-links ul li {
+    display: inline-block;
+    padding: 5px;
+  }
 }
