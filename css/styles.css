@@ -6,6 +6,7 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  max-width: 100%;
 }
 
 a {
@@ -63,15 +64,27 @@ main {
   display: none;
 }
 
+.navigation {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  height: 10vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
 .fix-nav {
   background-color: white;
-  height: 10vh;
   display: flex;
   justify-content: space-between;
 }
 .sweatpants {
   background: yellow;
   font-size: 0.8em;
+  padding: 0.5em;
 }
 .fix-nav-left img {
   width: 5em;
@@ -91,6 +104,7 @@ main {
 }
 
 .main-wrapper {
+  margin-top: 10vh;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr;
