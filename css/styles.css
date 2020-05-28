@@ -69,26 +69,30 @@ main {
   display: none;
 }
 
-.navigation {
-  width: 100%;
-  /* top: 0;
-  left: 0; */
+.fix-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
   z-index: 2;
-  height: 10vh;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
-}
-
-.fix-nav-mobile {
   background-color: white;
+  height: auto;
   display: flex;
   justify-content: space-between;
+  margin-top: 3vh;
+}
+.white-nav-links {
+  display: none;
 }
 .sweatpants {
+  position: fixed;
+  top: 10vh;
+  left: 0;
+  width: 100%;
   background: yellow;
   font-size: 0.8em;
   padding: 0.5em;
+  margin-top: 1vh;
+  z-index: 2;
 }
 
 .fix-nav-left {
@@ -99,7 +103,7 @@ main {
 
 .fix-nav-left img {
   width: 5em;
-  height: 5em;
+  height: auto;
 }
 
 .fix-nav-right {
@@ -131,7 +135,8 @@ main {
 .hero-img-2 {
   background: url("../images/Mobile-phone.jpg");
   background-position: center;
-}.disappear {
+}
+.disappear {
   display: none;
 }
 
@@ -203,6 +208,7 @@ Funding Section styling
 .funding-links li {
   padding: 0.3em;
 }
+
 .orange {
   color: #f42;
 }
@@ -212,6 +218,7 @@ Funding Section styling
   background: white;
   position: relative;
 }
+
 .cinchy-anchor {
   text-decoration: none;
   color: white;
@@ -230,6 +237,7 @@ Funding Section styling
   font-size: 1.2em;
   background: #f42;
 }
+
 .cinchy-anchor h5 {
   color: #555;
   font-variant: small-caps;
@@ -371,61 +379,50 @@ Funding Section styling
   text-align: center;
   padding-top: 1em;
 }
-/* 
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-  MEDIA QUERIES FOR IPAD
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) {
-  .fix-nav-mobile {
+/* and (max-device-width : 1024px)  */
+
+@media only screen and (min-device-width: 768px) {
+  .hamburger {
     display: none;
   }
 
-  .nav-big-screen {
-    background-color: #000;
-    height: 3vh;
-  }
-
-  .nav-big-screen .upper-nav {
-    display:flex;
-    align-items: center;
-  }
-
-  .nav-big-screen .upper-nav ul li {
-    display: inline-block;
-    font-size: 1em;
-    padding: 0em 0.2em;
-  }
-
-  .nav-big-screen .upper-nav ul li a {
-    color: white;
-  }
-
-  .fix-nav-big-screen {
-    display: flex;
-    height: 8vh;
-  }
-
-  .fix-nav-big-screen ul li {
-    display: inline-block;
-    font-size: 1.2em;
-    padding: 0em 0.2em;
-  }
   
-  .fix-nav-big-screen ul li a {
-    color: #444
+  .navigation {
+    height: auto;
+    width: 100%;
+    margin-bottom: 10vh;
   }
 
-  .fix-nav-big-screen .last-link {
+  .black-nav-links {
     display: none;
   }
 
-  /* .sweatpants {
-    display: none;
-  } */
+  .white-nav-links {
+    display: inline-block;
+    padding: 1em;
+    margin-top: 0;
+  }
 
+  .ul-white-nav li {
+    display: inline-block;
+    height: 100%;
+    font-size: 1.2em;
+    padding: 0.5em;
+    color: #666;
+  }
+
+  .black-nav-links {
+    background: #000;
+    color: white;
+    height: 3vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .black-nav-links ul li {
+    display: inline-block;
+    padding: 5px;
+  }
 }
-
-
