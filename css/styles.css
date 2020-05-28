@@ -29,6 +29,10 @@ a {
   display: inline-block;
 }
 
+.black-nav-links {
+  display: none;
+}
+
 .round-btn {
   height: 3em;
   width: 3em;
@@ -69,6 +73,7 @@ main {
   left: 0;
   z-index: 2;
   background-color: white;
+  width: 100%;
   height: auto;
   display: flex;
   justify-content: space-between;
@@ -110,6 +115,7 @@ main {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   height: auto;
+  margin-top: 13vh;
 }
 
 .hero-img-1 {
@@ -376,11 +382,7 @@ Funding Section styling
   .navigation {
     height: auto;
     width: 100%;
-    margin-bottom: 10vh;
-  }
-
-  .black-nav-links {
-    display: none;
+    /* margin-bottom: 10vh; */
   }
 
   .white-nav-links {
