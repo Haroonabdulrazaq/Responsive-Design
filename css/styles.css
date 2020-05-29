@@ -35,8 +35,8 @@ a {
 }
 
 .round-btn {
-  height: 3em;
-  width: 3em;
+  height: 2em;
+  width: 2em;
   background-color: #666;
   border-radius: 50%;
 }
@@ -86,7 +86,7 @@ main {
 
 .sweatpants {
   position: fixed;
-  max-width:100%;
+  max-width: 100%;
   top: 10vh;
   left: 0;
   width: 100%;
@@ -336,13 +336,17 @@ Funding Section styling
 .icons {
   height: 12.5vh;
   display: flex;
-  justify-content: space-evenly;
   align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+.icons a {
+  margin: 0 0.3em;
 }
 
 .icons a i {
   margin: 0.6em 0.5em;
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 .links {
@@ -363,7 +367,8 @@ Funding Section styling
   color: white;
 }
 
-.footer-footnote p {
+.footer-footnote span {
+  display: block;
   text-align: center;
   padding-top: 1em;
 }
@@ -377,7 +382,6 @@ Funding Section styling
     height: auto;
     max-width: 100%;
   }
-  
 
   .white-nav-links {
     display: inline-block;
@@ -480,7 +484,7 @@ Funding Section styling
 
   .cinchy-anchor h2 {
     padding: 0.6em 0 0 4em;
-  } 
+  }
 
   .cinchy-img {
     top: 0.6em;
@@ -509,5 +513,17 @@ Funding Section styling
 
   .header-img .overlay .tab-img-text {
     font-size: 1em;
+  }
+  .round-btn {
+    height: 3em;
+    width: 3em;
+  }
+
+  .icons a {
+    margin: 0 1.3em;
+  }
+
+  .icons a i {
+    font-size: 1.5em;
   }
 }
