@@ -94,6 +94,7 @@ main {
   padding: 0.5em;
   z-index: 2;
 }
+
 .fix-nav-left img {
   width: 5em;
   height: auto;
@@ -321,7 +322,7 @@ Funding Section styling
 
 /* +++++++++++++++++++++++++++++++Footer++++++++++++++++++++++++++++++++++++++++++ */
 .footer {
-  height: 40vh;
+  height: 42vh;
   background: #000;
   color: white;
 }
@@ -333,6 +334,7 @@ Funding Section styling
 .icons {
   height: 12.5vh;
   display: flex;
+  justify-content: center;
   align-items: center;
   width: 80%;
   margin: 0 auto;
@@ -496,9 +498,13 @@ Funding Section styling
     left: 0.6em;
   }
 
+  /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Style for App section
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
   .app-section {
     display: grid;
-    grid-template-rows: repeat(4, 1fr);
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 0.5em;
   }
@@ -510,6 +516,11 @@ Funding Section styling
   .header-img .overlay .tab-img-text {
     font-size: 1em;
   }
+
+   /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Style for footer
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
   .round-btn {
     height: 3em;
     width: 3em;
@@ -521,5 +532,108 @@ Funding Section styling
 
   .icons a i {
     font-size: 1.5em;
+  }
+}
+
+
+@media only screen and (min-device-width: 1024px) {
+ /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  Style for top image section
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+  .main-wrapper {
+    margin-bottom: 2em;
+  }
+
+  .text-bg {
+    font-size: 2em;
+    margin: 9.5em 0 0 0.5em;
+  }
+
+  .text-bg-sm {
+    margin: 6em 0 0 0.5em;
+  }
+
+  .text-bg-sm-3 {
+    margin: 8em 0 0 0.5em;
+  }
+  
+   /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  Style for Latest News section
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+  .news-container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1em;
+    margin-bottom: 2em;
+  }
+
+  .news {
+    grid-template-columns: 1fr;
+  }
+
+  .news-img img {
+    height: 24vh;
+  }
+
+  .news-text-author p {
+    font-size: 1em;
+  }
+
+
+   /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Style for Funding section
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+  .cinchy4 {
+    display: block;
+  }
+
+  .cinchy-parent {
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1em;
+    margin-bottom: 2em;
+  }
+
+  /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Style for App section
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+  .app-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+  }
+
+  .tab-img {
+    background-position: center;
+    height: 40vh;
+  }
+
+  .header-img .overlay .tab-img-text {
+    font-size: 1em;
+  }
+
+  /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Style for footer
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+  .icons {
+    justify-content: center;
+  }
+
+  .icons a {
+    margin: 0 0.5em;
+  }
+
+  .footer-footnote {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-footnote span {
+    display: inline-block;
+    padding-top: 3em;
   }
 }
