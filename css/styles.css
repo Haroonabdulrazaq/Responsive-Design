@@ -385,6 +385,17 @@ Funding Section styling
   .white-nav-links {
     display: inline-block;
     padding: 1em;
+    /* color: #aaa;
+    cursor: pointer; */
+  }
+  .ul-white-nav li a {
+    font-variant: small-caps;
+    color: rgba(3b, 3b, 3b, 0.8);
+    cursor: pointer;
+  }
+
+  .white-nav-links li a:hover {
+    color: #222;
   }
 
   .ul-white-nav li {
@@ -410,6 +421,15 @@ Funding Section styling
   .black-nav-links ul li {
     display: inline-block;
     padding: 3px;
+  }
+
+  .ul-black-nav li a {
+    color: #aaa;
+    font-size: 0.8em;
+  }
+  .ul-black-nav li a:hover {
+    color: white;
+    cursor: pointer;
   }
 
   /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -502,7 +522,6 @@ Funding Section styling
       Style for App section
   ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
-
   .app-section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -517,7 +536,7 @@ Funding Section styling
     font-size: 1em;
   }
 
-   /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
       Style for footer
   ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
@@ -535,14 +554,38 @@ Funding Section styling
   }
 }
 
-
 @media only screen and (min-device-width: 1024px) {
- /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  .black-nav-links {
+    margin-left: 0;
+    padding-left: 1.8em;
+  }
+
+  .white-nav-links {
+    padding-top: 1.5em;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .sweatpants {
+    margin-top: 1em;
+  }
+  /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
   Style for top image section
   ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
   .main-wrapper {
-    margin-bottom: 2em;
+    display: grid;
+    grid-template-columns: 2.8fr 1.2fr;
+    grid-template-rows: 3fr;
+  }
+  .desk-header-img {
+    height: 90vh;
+  }
+
+  .desk-header-img2 {
+    height: 44vh;
   }
 
   .text-bg {
@@ -557,8 +600,8 @@ Funding Section styling
   .text-bg-sm-3 {
     margin: 8em 0 0 0.5em;
   }
-  
-   /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+  /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
   Style for Latest News section
   ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
@@ -573,15 +616,14 @@ Funding Section styling
   }
 
   .news-img img {
-    height: 24vh;
+    height: 26vh;
   }
 
   .news-text-author p {
     font-size: 1em;
   }
 
-
-   /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
       Style for Funding section
   ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
@@ -598,7 +640,6 @@ Funding Section styling
   /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
       Style for App section
   ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-
 
   .app-section {
     display: grid;
