@@ -138,6 +138,7 @@ main {
   background-size: cover;
   position: relative;
   height: 30vh;
+  margin-bottom: 1em;
 }
 
 .img-text {
@@ -382,7 +383,6 @@ Funding Section styling
   .navigation {
     height: auto;
     width: 100%;
-    /* margin-bottom: 10vh; */
   }
 
   .white-nav-links {
@@ -411,5 +411,53 @@ Funding Section styling
   .black-nav-links ul li {
     display: inline-block;
     padding: 5px;
+  }
+
+  /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  Style for top image section
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+  .main-wrapper {
+    grid-template-columns: 3fr 2fr;
+    /* grid-template-rows: 1fr 1fr; */
+    grid-gap: 0.5em;
+  }
+
+  .hero-img-1 {
+    height: 61vh;
+  }
+
+  .span-2-rows {
+    grid-row-end: span 2;
+  }
+
+  .header-img {
+    margin-bottom: 0;
+  }
+
+  .text-bg {
+    font-size: 2em;
+    margin: 14.5em 0 0 0.5em;
+  }
+
+  .text-bg-sm {
+    margin: 11em 0 0 0.5em;
+  }
+
+  .text-bg-sm-3 {
+    margin: 13em 0 0 0.5em;
+  }
+
+  /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  Style for Latest News section
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+  .news-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0.5em;
+  }
+
+  .news {
+    grid-template-columns: 1fr;
   }
 }
