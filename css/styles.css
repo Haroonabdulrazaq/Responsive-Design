@@ -390,7 +390,7 @@ Funding Section styling
   }
   .ul-white-nav li a {
     font-variant: small-caps;
-    color: rgba(3b, 3b, 3b, 0.8);
+    color: rgba(3b, 3b, 3b, 0.2);
     cursor: pointer;
   }
 
@@ -400,10 +400,8 @@ Funding Section styling
 
   .ul-white-nav li {
     display: inline-block;
-    height: 100%;
     font-size: 1.2em;
     padding: 0.5em;
-    color: #666;
   }
 
   .black-nav-links {
