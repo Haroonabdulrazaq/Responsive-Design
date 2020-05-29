@@ -83,8 +83,10 @@ main {
 .white-nav-links {
   display: none;
 }
+
 .sweatpants {
   position: fixed;
+  max-width:100%;
   top: 10vh;
   left: 0;
   width: 100%;
@@ -206,7 +208,7 @@ Funding Section styling
 }
 
 .cinchy {
-  height: 40vh;
+  /* height: 40vh; */
   background: white;
   position: relative;
 }
@@ -375,6 +377,7 @@ Funding Section styling
     height: auto;
     max-width: 100%;
   }
+  
 
   .white-nav-links {
     display: inline-block;
@@ -402,6 +405,10 @@ Funding Section styling
   .black-nav-links ul li {
     display: inline-block;
     padding: 5px;
+  }
+
+  .sweatpants {
+    display: none;
   }
 
   /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -460,16 +467,24 @@ Funding Section styling
       Style for Funding section
   ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
+  .cinchy4 {
+    display: none;
+  }
+
   .cinchy-parent {
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 0.5em;
-    max-width: 100%;
   }
 
-  .cinchy4 {
-    display: none;
+  .cinchy-anchor h2 {
+    padding: 0.6em 0 0 4em;
+  } 
+
+  .cinchy-img {
+    top: 0.6em;
+    left: 0.6em;
   }
 
   .cinchy-anchor h2 {
