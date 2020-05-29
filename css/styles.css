@@ -419,7 +419,7 @@ Funding Section styling
 
   .main-wrapper {
     grid-template-columns: 3fr 2fr;
-    /* grid-template-rows: 1fr 1fr; */
+    grid-template-rows: 1fr 1fr;
     grid-gap: 0.5em;
   }
 
