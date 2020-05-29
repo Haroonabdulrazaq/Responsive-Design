@@ -291,7 +291,7 @@ Funding Section styling
 
 .description {
   padding: 1em;
-  background-color: rgb(241, 173, 173);
+  background-color: rgba(255, 68, 34, 0.08);
 }
 
 .description h4 {
@@ -423,6 +423,11 @@ Funding Section styling
 
   .header-img {
     margin-bottom: 0;
+    background-position: center;
+  }
+
+  .tab-overlay {
+    background: linear-gradient(rgba(218, 43, 43, 0), #000);
   }
 
   .text-bg {
@@ -449,5 +454,35 @@ Funding Section styling
 
   .news {
     grid-template-columns: 1fr;
+  }
+  /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Style for Funding section
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+  .cinchy-parent {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0.5em;
+    max-width: 100%;
+  }
+
+  .cinchy4 {
+    display: none;
+  }
+
+  .app-section {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0.5em;
+  }
+  .tab-img {
+    background-position: center;
+    height: 20vh;
+  }
+
+  .header-img .overlay .tab-img-text {
+    font-size: 1em;
   }
 }
