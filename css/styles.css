@@ -372,7 +372,7 @@ Funding Section styling
   padding-top: 1em;
 }
 
-@media only screen and (min-device-width: 768px) {
+@media only screen and (min-width: 768px) {
   .hamburger {
     display: none;
   }
@@ -385,12 +385,10 @@ Funding Section styling
   .white-nav-links {
     display: inline-block;
     padding: 1em;
-    /* color: #aaa;
-    cursor: pointer; */
   }
   .ul-white-nav li a {
     font-variant: small-caps;
-    color: rgba(3b, 3b, 3b, 0.2);
+    color: rgba(150, 150, 150, 0.8);
     cursor: pointer;
   }
 
@@ -552,7 +550,7 @@ Funding Section styling
   }
 }
 
-@media only screen and (min-device-width: 1024px) {
+@media only screen and (min-width: 1024px) {
   .black-nav-links {
     margin-left: 0;
     padding-left: 1.8em;
