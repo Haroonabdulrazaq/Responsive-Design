@@ -77,6 +77,19 @@ main {
   z-index: 5;
 }
 
+.logo-black-white {
+  display: flex;
+}
+
+.nav-image {
+
+}
+
+.nav-image img {
+  width: 20vw;
+  height:15vw;
+}
+
 .white-nav {
   display: flex;
   background: white;
@@ -101,15 +114,6 @@ main {
   margin-bottom: 0.7em;
 }
 
-.nav-image {
-  position: absolute;
-  top:0;
-}
-
-.nav-image img {
-  width: 20vw;
-  height:15vw;
-}
 
 .ul-white-nav {
   display: none;
