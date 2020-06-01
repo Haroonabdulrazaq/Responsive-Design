@@ -30,10 +30,6 @@ a {
   display: inline-block;
 }
 
-.black-nav-links {
-  display: none;
-}
-
 .round-btn {
   height: 2em;
   width: 2em;
@@ -68,61 +64,72 @@ main {
   display: none;
 }
 
-.fix-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 2;
-  background-color: white;
-  width: 100%;
-  height: auto;
+.flex-display {
   display: flex;
-  justify-content: space-between;
 }
 
-.white-nav-links {
-  display: none;
-}
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  Navbar
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
-.bg-logo {
-  display: none;
-}
-
-.sweatpants {
+.navbar {
   position: fixed;
-  max-width: 100%;
-  top: 8vh;
-  left: 0;
-  width: 100%;
-  background: yellow;
-  font-size: 0.8em;
-  padding: 0.5em;
-  z-index: 2;
+  z-index: 5;
 }
 
-.fix-nav-left img {
-  width: 5em;
-  height: auto;
-}
-
-.fix-nav-right {
+.white-nav {
   display: flex;
-  align-items: center;
+  background: white;
 }
 
-.fix-nav-right i {
-  padding: 0 0.2em;
+.white-left {
+  width:50vw;
+}
+
+.white-right {
+  width:50vw;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.white-right i {
+  padding: 0 0.3em;
   font-size: 1.5em;
   color: #888;
   border-left: 1px solid #888;
+  margin-top: 0.7em;
+  margin-bottom: 0.7em;
 }
+
+.nav-image {
+  position: absolute;
+  top:0;
+}
+
+.nav-image img {
+  width: 20vw;
+  height:15vw;
+}
+
+.ul-white-nav {
+  display: none;
+}
+
+.black-nav {
+  display: none;
+}
+
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+          HERO Section
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
 .main-wrapper {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   height: auto;
-  margin-top: 11vh;
+  margin-top: 8vh;
 }
 
 .hero-img-1 {
@@ -369,79 +376,110 @@ Funding Section styling
 }
 
 @media only screen and (min-width: 760px) {
-  .hamburger {
+  
+  /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    STYLE FOR NAVBAR
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+  .white-nav-tab-link {
     display: none;
   }
 
-  .navigation {
-    height: auto;
-    max-width: 100%;
+  .hamburger{
+    display: none;
   }
 
-  .white-nav-links {
-    display: inline-block;
-    padding: 0.1em;
-    position: relative;
-    top: 0;
+  .nav-image img {
+    width: 12.5vw;
+    height: 14.5vw;
   }
 
-  .ul-black-nav li a {
-    color: #aaa;
-    font-size: 0.8em;
+  .black-nav {
+    display: flex;
+    width: 87.5vw;
+    background:#000;
+    margin-left: 12.5vw;
+  }
+
+  .black-nav-left {
+    width: 65vw;  
+  }
+
+  .black-nav-right{
+    width: 35vw;
+  }
+
+  .black-nav-right .ul-black-nav {
+    justify-content: flex-end;
+  }
+
+  .black-nav-right .ul-black-nav li ,
+  .black-nav-left .ul-black-nav li {
+    padding: 1em 0.3em;
+  }
+
+  .black-nav-right .ul-black-nav li a,
+  .black-nav-left .ul-black-nav li a {
+    color: white;
+    font-size: 1em;
+    font-variant: small-caps;
+  }
+
+  .white-nav {
+    display: flex;
+    width: 87.5%;
+    margin-left: 12.5%;
+  }
+
+  .white-nav .white-left {
+    width:85%;
+  } 
+
+  .white-nav .white-right {
+    width:15%;
+  }
+
+  .ul-white-nav {
+    display: flex;
+  }
+
+  .ul-white-nav li{
+    padding: 1em 0.2em 1em 1.2em;
   }
 
   .ul-white-nav li a {
     font-variant: small-caps;
     color: rgba(150, 150, 150, 0.8);
+    font-size: 1.3em;
     cursor: pointer;
   }
 
-  .white-nav-links li a:hover {
+  .ul-white-nav li a:hover {
     color: #222;
   }
 
-  .ul-white-nav li {
-    display: inline-block;
-    font-size: 1em;
-    padding: 0.5em;
-  }
-
-  .black-nav-links {
-    background: #000;
-    color: white;
-    height: 4vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    position: relative;
-    z-index: 3;
-    margin-left: 6em;
-  }
-
-  .black-nav-links ul li {
-    display: inline-block;
-    padding: 3px;
-  }
-
-  .ul-black-nav li a:hover {
-    color: white;
-    cursor: pointer;
+  .white-right i {
+    padding: 0 0.2em;
   }
 
   .sweatpants {
-    /* background: firebrick; */
-    margin-top: -1em;
+    display: block;
+    background-color: yellow;
+    padding: 0.7em 0em; 
   }
 
   /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
   Style for top image section
   ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
+  .bg-logo {
+    display: none;
+  }
+
   .main-wrapper {
     grid-template-columns: 3fr 2fr;
     grid-template-rows: 1fr 1fr;
     grid-gap: 0.5em;
-    margin-top: 1vh;
+    margin-top: 14vh;
   }
 
   .hero-img-1 {
@@ -564,23 +602,87 @@ Funding Section styling
 }
 
 @media only screen and (min-width: 1024px) {
-  .black-nav-links {
-    margin-left: 0;
-    padding-left: 1.8em;
+
+  /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  Style for Navbar
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+  .white-nav-tab-link {
+    display: inline-block;
   }
 
-  .white-nav-links {
-    padding-top: 1.5em;
-  }
-
-  .logo {
+  .nav-image {
     display: none;
   }
 
-  .sweatpants {
-    margin-top: 1em;
+  .black-nav {
+    width: 100vw;
+    background:#000;
+    margin-left: 0vw;
   }
 
+  .black-nav-left {
+    width: 60vw;  
+  }
+
+  .black-nav-right{
+    width: 37vw;
+  }
+
+  
+  .black-nav-right .ul-black-nav li ,
+  .black-nav-left .ul-black-nav li {
+    padding: 0.5em 0.3em;
+  }
+
+  .black-nav-right .ul-black-nav li a,
+  .black-nav-left .ul-black-nav li a {
+    font-size: 0.8em;
+    font-variant: normal;
+    text-transform: uppercase;
+  }
+
+  .desktop-first-black-li {
+    margin-left: 1.5vw;
+  }
+
+  .white-nav {
+    width: 100vw;
+    margin-left: 0;
+  }
+
+  .white-nav .white-left {
+    width:83vw;
+  } 
+
+
+  .white-right i {
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+  }
+
+  .ul-white-nav li{
+    padding: 0.3em 0.2em 0.3em 1.4em;
+  }
+
+  .ul-white-nav li a:hover {
+    color: #222;
+  }
+
+  .white-right i {
+    padding: 0em 0.2em;
+  }
+
+  .sweatpants {
+    padding: 0.5em 0em 0.5em 1.5em; 
+    font-size: 0.8em;
+  }
+
+  .sweatpants span {
+    display: inline;
+  }
+
+  
   /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
   Style for top image section
   ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
@@ -604,6 +706,7 @@ Funding Section styling
     display: grid;
     grid-template-columns: 2.8fr 1.2fr;
     grid-template-rows: 3fr;
+    margin-top: 7vw;
     margin-bottom: 2em;
   }
 
