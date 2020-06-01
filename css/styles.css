@@ -85,7 +85,7 @@ main {
 }
 
 .bg-logo {
-  display:none;
+  display: none;
 }
 
 .sweatpants {
@@ -574,13 +574,17 @@ Funding Section styling
   Style for top image section
   ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
+  .desktop-margin {
+    width: 90%;
+    margin: 0 auto;
+  }
   .bg-logo {
     position: absolute;
     display: inline-block;
-    width:20em;
-    height:10em;
-    top:4em;
-    left:1.5em;
+    width: 25em;
+    height: 10em;
+    top: 4em;
+    left: 1.5em;
     fill: white;
   }
 
@@ -638,7 +642,7 @@ Funding Section styling
       Style for Funding section
   ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
-  .funding-links-parent{
+  .funding-links-parent {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
@@ -650,7 +654,7 @@ Funding Section styling
 
   .funding-links {
     display: flex;
-    justify-content: flex-end;    
+    justify-content: flex-end;
   }
 
   .funding-links li {
