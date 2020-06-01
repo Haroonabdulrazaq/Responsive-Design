@@ -462,6 +462,21 @@ Funding Section styling
     margin: 14.5em 0 0 0.5em;
   }
 
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(rgba(218, 43, 43, 0.8), #000);
+    opacity: 0.8;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+
+  .tab-overlay { 
+    background: linear-gradient(rgba(218, 43, 43, 0), #000);
+  } 
+
   .text-bg-sm {
     margin: 11em 0 0 0.5em;
   }
@@ -481,6 +496,10 @@ Funding Section styling
 
   .news {
     grid-template-columns: 1fr;
+  }
+
+  .news-img img {
+    height: 16vh;
   }
 
   /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

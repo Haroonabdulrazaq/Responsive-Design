@@ -1,4 +1,4 @@
-# build the hierarchy of smashing Magazine
+# build with Responsive Design
 
 Microverse project focused on learning Responsive Design
 
