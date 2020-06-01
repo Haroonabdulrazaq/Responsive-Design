@@ -15,7 +15,7 @@ a {
 }
 
 .mb-0 {
-  margin-bottom: 0em;
+  margin-bottom: 0;
 }
 
 .mb-1 {
@@ -79,6 +79,7 @@ main {
   display: flex;
   justify-content: space-between;
 }
+
 .white-nav-links {
   display: none;
 }
@@ -127,9 +128,6 @@ main {
 .hero-img-2 {
   background: url("../images/Mobile-phone.jpg");
   background-position: center;
-}
-.disappear {
-  display: none;
 }
 
 .hero-img-3 {
@@ -189,7 +187,8 @@ main {
   font-size: 0.8em;
   color: #888;
 }
-/* 
+
+/*
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Funding Section styling
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
@@ -215,6 +214,7 @@ Funding Section styling
   text-decoration: none;
   color: white;
 }
+
 .cinchy-img {
   position: absolute;
   width: 4em;
@@ -241,6 +241,7 @@ Funding Section styling
   height: 10vh;
   padding: 0.6em 6em;
 }
+
 .rick {
   font-size: 0.7em;
 }
@@ -250,6 +251,7 @@ Funding Section styling
   padding: 0.5em;
   border-bottom: 1px solid rgb(241, 173, 173);
 }
+
 .below-cinchy a {
   padding: 0.5em;
   display: block;
@@ -257,7 +259,7 @@ Funding Section styling
 
 /*
   ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-  APP SECTION STYLE 
+  APP SECTION STYLE
   ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
  */
 
@@ -290,12 +292,12 @@ Funding Section styling
   grid-template-columns: 3fr 1fr;
 }
 
-.description {
+.app .description {
   padding: 1em;
   background-color: rgba(255, 68, 34, 0.08);
 }
 
-.description h4 {
+.app .description h4 {
   font-size: 0.8em;
 }
 
@@ -321,17 +323,19 @@ Funding Section styling
 }
 
 /* +++++++++++++++++++++++++++++++Footer++++++++++++++++++++++++++++++++++++++++++ */
+
 .footer {
   height: 42vh;
   background: #000;
   color: white;
 }
-.icons-links {
+
+.footer .icons-links {
   height: 25vh;
   background: #131313;
 }
 
-.icons {
+.footer .icons-links .icons {
   height: 12.5vh;
   display: flex;
   justify-content: center;
@@ -339,34 +343,33 @@ Funding Section styling
   width: 80%;
   margin: 0 auto;
 }
-.icons a {
+
+.footer .icons-links .icons a {
   margin: 0 0.3em;
+  color: white;
 }
 
-.icons a i {
+.footer .icons-links .icons a i {
   margin: 0.6em 0.5em;
   font-size: 1em;
 }
 
-.links {
+.footer .links {
   height: 10vh;
 }
 
-.footer-links {
+.footer .links .footer-links {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.footer-links li {
+
+.footer .links .footer-links li {
   padding: 0.5em;
   margin-top: 1.5em;
 }
 
-.icons-links .icons a {
-  color: white;
-}
-
-.footer-footnote span {
+.footer .footer-footnote span {
   display: block;
   text-align: center;
   padding-top: 1em;
@@ -386,6 +389,12 @@ Funding Section styling
     display: inline-block;
     padding: 1em;
   }
+
+  .ul-black-nav li a {
+    color: #aaa;
+    font-size: 0.8em;
+  }
+
   .ul-white-nav li a {
     font-variant: small-caps;
     color: rgba(150, 150, 150, 0.8);
@@ -419,10 +428,6 @@ Funding Section styling
     padding: 3px;
   }
 
-  .ul-black-nav li a {
-    color: #aaa;
-    font-size: 0.8em;
-  }
   .ul-black-nav li a:hover {
     color: white;
     cursor: pointer;
@@ -481,6 +486,7 @@ Funding Section styling
   .news {
     grid-template-columns: 1fr;
   }
+
   /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
       Style for Funding section
   ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
@@ -505,15 +511,6 @@ Funding Section styling
     left: 0.6em;
   }
 
-  .cinchy-anchor h2 {
-    padding: 0.6em 0 0 4em;
-  }
-
-  .cinchy-img {
-    top: 0.6em;
-    left: 0.6em;
-  }
-
   /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
       Style for App section
   ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
@@ -523,6 +520,7 @@ Funding Section styling
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 0.5em;
   }
+
   .tab-img {
     background-position: center;
     height: 20vh;
@@ -541,11 +539,11 @@ Funding Section styling
     width: 3em;
   }
 
-  .icons a {
+  .footer .icons-links .icons a {
     margin: 0 1.3em;
   }
 
-  .icons a i {
+  .footer .icons-links .icons a i {
     font-size: 1.5em;
   }
 }
@@ -567,6 +565,7 @@ Funding Section styling
   .sweatpants {
     margin-top: 1em;
   }
+
   /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
   Style for top image section
   ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
@@ -576,6 +575,7 @@ Funding Section styling
     grid-template-columns: 2.8fr 1.2fr;
     grid-template-rows: 3fr;
   }
+
   .desk-header-img {
     height: 90vh;
   }
