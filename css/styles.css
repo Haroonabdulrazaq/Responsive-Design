@@ -153,17 +153,6 @@ main {
   color: white;
 }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: linear-gradient(rgba(218, 43, 43, 0.8), #000);
-  opacity: 0.8;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-}
-
 .news-container {
   display: grid;
   grid-template-columns: 1fr;
@@ -379,7 +368,7 @@ Funding Section styling
   padding-top: 1em;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 760px) {
   .hamburger {
     display: none;
   }
@@ -391,7 +380,9 @@ Funding Section styling
 
   .white-nav-links {
     display: inline-block;
-    padding: 1em;
+    padding: 0.1em;
+    position: relative;
+    top: 0;
   }
 
   .ul-black-nav li a {
@@ -411,7 +402,7 @@ Funding Section styling
 
   .ul-white-nav li {
     display: inline-block;
-    font-size: 1.2em;
+    font-size: 1em;
     padding: 0.5em;
   }
 
@@ -437,6 +428,11 @@ Funding Section styling
     cursor: pointer;
   }
 
+  .sweatpants {
+    /* background: firebrick; */
+    margin-top: -1em;
+  }
+
   /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
   Style for top image section
   ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
@@ -459,10 +455,6 @@ Funding Section styling
   .header-img {
     margin-bottom: 0;
     background-position: center;
-  }
-
-  .tab-overlay {
-    background: linear-gradient(rgba(218, 43, 43, 0), #000);
   }
 
   .text-bg {
@@ -593,6 +585,17 @@ Funding Section styling
     grid-template-columns: 2.8fr 1.2fr;
     grid-template-rows: 3fr;
     margin-bottom: 2em;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(rgba(218, 43, 43, 0.8), #000);
+    opacity: 0.8;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
   }
 
   .desk-header-img {
