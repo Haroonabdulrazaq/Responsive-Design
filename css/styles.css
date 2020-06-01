@@ -578,8 +578,8 @@ Funding Section styling
     position: absolute;
     display: inline-block;
     width:20em;
-    height:20em;
-    top:-3em;
+    height:10em;
+    top:4em;
     left:1.5em;
     fill: white;
   }
