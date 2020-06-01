@@ -473,9 +473,9 @@ Funding Section styling
     z-index: 1;
   }
 
-  .tab-overlay { 
+  .tab-overlay {
     background: linear-gradient(rgba(218, 43, 43, 0), #000);
-  } 
+  }
 
   .text-bg-sm {
     margin: 11em 0 0 0.5em;
