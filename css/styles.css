@@ -176,8 +176,10 @@ main {
 }
 
 .img-text {
+  position: absolute;
+  bottom: 1em;
+  left: 1em;
   width: 70%;
-  margin: 5em auto 0;
   font-size: 1.2em;
   font-weight: bolder;
   color: white;
@@ -520,11 +522,7 @@ Funding Section styling
   .header-img {
     margin-bottom: 0;
     background-position: center;
-  }
-
-  .text-bg {
-    font-size: 2em;
-    margin: 14.5em 0 0 0.5em;
+    position: relative;
   }
 
   .overlay {
@@ -542,12 +540,8 @@ Funding Section styling
     background: linear-gradient(rgba(218, 43, 43, 0), #000);
   }
 
-  .text-bg-sm {
-    margin: 11em 0 0 0.5em;
-  }
-
-  .text-bg-sm-3 {
-    margin: 13em 0 0 0.5em;
+  .text-bg {
+    font-size: 2em;
   }
 
   /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -759,20 +753,7 @@ Funding Section styling
     height: 44vh;
   }
 
-  .text-bg {
-    font-size: 2em;
-    margin: 14.5em 0 0 1vw;
-  }
-
-  .text-bg-sm {
-    margin: 10em 0 0 0.5em;
-  }
-
-  .text-bg-sm-3 {
-    margin: 11em 0 0 0.5em;
-  }
-
-  /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
   Style for Latest News section
   ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
