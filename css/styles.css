@@ -75,39 +75,50 @@ main {
 .navbar {
   position: fixed;
   z-index: 5;
+  height: 15vw;
 }
 
 .logo-black-white {
+  width:100%;
   display: flex;
+  height: 15vw;
+  background: firebrick;
 }
 
 .nav-image {
+  width:15%;
+}
 
+.black-white {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
 }
 
 .nav-image img {
-  width: 20vw;
-  height:15vw;
+  width: 100%;
+  height: 15vw;
 }
 
 .white-nav {
+  height: 15vw;
   display: flex;
   background: white;
 }
 
 .white-left {
-  width:50vw;
+  display: none;
 }
 
 .white-right {
-  width:50vw;
+  width:100%;
   display: flex;
   justify-content: flex-end;
 }
 
 .white-right i {
-  padding: 0 0.3em;
-  font-size: 1.5em;
+  padding: 0 1em 0 0.3em;
+  font-size: 7vw;
   color: #888;
   border-left: 1px solid #888;
   margin-top: 0.7em;
@@ -133,8 +144,12 @@ main {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   height: auto;
-  margin-top: 8vh;
+  margin-top: 15vw;
 }
+
+.bg-logo {
+  display: none;
+} 
 
 .hero-img-1 {
   background: url("../images/roman-kraft-_Zua2hyvTBk-unsplash.jpg");
@@ -393,23 +408,23 @@ Funding Section styling
   }
 
   .nav-image img {
-    width: 12.5vw;
-    height: 14.5vw;
+    width: 100%;
+    height: 15vw;
   }
 
   .black-nav {
     display: flex;
-    width: 87.5vw;
-    background:#000;
-    margin-left: 12.5vw;
+    width: 100%;
+    height: 5vw;
+    background: #000;
   }
 
   .black-nav-left {
-    width: 65vw;  
+    width: 65%;  
   }
 
   .black-nav-right{
-    width: 35vw;
+    width: 35%;
   }
 
   .black-nav-right .ul-black-nav {
@@ -418,23 +433,24 @@ Funding Section styling
 
   .black-nav-right .ul-black-nav li ,
   .black-nav-left .ul-black-nav li {
-    padding: 1em 0.3em;
+    padding: 1vw 0.3em;
   }
 
   .black-nav-right .ul-black-nav li a,
   .black-nav-left .ul-black-nav li a {
     color: white;
-    font-size: 1em;
+    font-size: 2vw;
     font-variant: small-caps;
   }
 
   .white-nav {
     display: flex;
-    width: 87.5%;
-    margin-left: 12.5%;
+    width: 100%;
+    height: 10vw;
   }
 
   .white-nav .white-left {
+    display: block;
     width:85%;
   } 
 
@@ -447,13 +463,13 @@ Funding Section styling
   }
 
   .ul-white-nav li{
-    padding: 1em 0.2em 1em 1.2em;
+    padding: 3vw 0.5vw 3vw 1vw;
   }
 
   .ul-white-nav li a {
     font-variant: small-caps;
     color: rgba(150, 150, 150, 0.8);
-    font-size: 1.3em;
+    font-size: 2.7vw;
     cursor: pointer;
   }
 
@@ -462,13 +478,14 @@ Funding Section styling
   }
 
   .white-right i {
-    padding: 0 0.2em;
+    font-size: 2.7vw;
+    padding: 2vw 2vw;
   }
 
   .sweatpants {
     display: block;
     background-color: yellow;
-    padding: 0.7em 0em; 
+    padding: 2.5vw 0em; 
   }
 
   /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -483,7 +500,7 @@ Funding Section styling
     grid-template-columns: 3fr 2fr;
     grid-template-rows: 1fr 1fr;
     grid-gap: 0.5em;
-    margin-top: 14vh;
+    margin-top: 21vw;
   }
 
   .hero-img-1 {
@@ -611,6 +628,11 @@ Funding Section styling
   Style for Navbar
   ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
+  .navbar {
+    width: 100%;
+    height: 6vw;
+  }
+
   .white-nav-tab-link {
     display: inline-block;
   }
@@ -619,66 +641,70 @@ Funding Section styling
     display: none;
   }
 
+  .logo-black-white {
+    height: 6vw;
+  }
+
+  .black-white {
+    width: 100%;
+    height: 6vw;
+  }
+   
   .black-nav {
-    width: 100vw;
-    background:#000;
-    margin-left: 0vw;
+    width: 100%;
+    height: 2.5vw;
   }
 
   .black-nav-left {
-    width: 60vw;  
+    width: 60%;  
   }
 
   .black-nav-right{
-    width: 37vw;
+    width: 40%;
   }
 
   
   .black-nav-right .ul-black-nav li ,
   .black-nav-left .ul-black-nav li {
-    padding: 0.5em 0.3em;
+    padding: 0.5vw;
   }
 
   .black-nav-right .ul-black-nav li a,
   .black-nav-left .ul-black-nav li a {
-    font-size: 0.8em;
+    font-size: 0.8vw;
     font-variant: normal;
     text-transform: uppercase;
   }
 
   .desktop-first-black-li {
-    margin-left: 1.5vw;
+    margin-left: 1.2vw;
   }
 
   .white-nav {
-    width: 100vw;
-    margin-left: 0;
+    width: 100%;
+    height: 3.5vw;
   }
 
   .white-nav .white-left {
-    width:83vw;
+    width:83%;
   } 
 
-
-  .white-right i {
-    margin-top: 0.2em;
-    margin-bottom: 0.2em;
-  }
-
   .ul-white-nav li{
-    padding: 0.3em 0.2em 0.3em 1.4em;
+    padding: 0.6vw 0.2vw 0.6vw 1.4vw;
   }
 
-  .ul-white-nav li a:hover {
-    color: #222;
+  .ul-white-nav li a {
+    font-size: 1.5vw;
+    cursor: pointer;
   }
 
   .white-right i {
-    padding: 0em 0.2em;
+    font-size: 1vw;
+    padding: 0.5vw;
   }
 
   .sweatpants {
-    padding: 0.5em 0em 0.5em 1.5em; 
+    padding: 0.5vw 0em 0.5vw 1.5vw; 
     font-size: 0.8em;
   }
 
@@ -710,7 +736,7 @@ Funding Section styling
     display: grid;
     grid-template-columns: 2.8fr 1.2fr;
     grid-template-rows: 3fr;
-    margin-top: 7vw;
+    margin-top: 7.2vw;
     margin-bottom: 2em;
   }
 
@@ -735,7 +761,7 @@ Funding Section styling
 
   .text-bg {
     font-size: 2em;
-    margin: 14.5em 0 0 0.5em;
+    margin: 14.5em 0 0 1vw;
   }
 
   .text-bg-sm {
