@@ -287,6 +287,7 @@ Funding Section styling
 }
 
 .header-img .overlay h4 {
+  display: inline-block;
   color: white;
   margin-top: 8em;
   margin-left: 1em;
