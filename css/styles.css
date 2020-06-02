@@ -133,6 +133,12 @@ main {
   display: none;
 }
 
+.sweatpants {
+  background-color: yellow;
+  padding: 2.5vw 0;
+  font-size: 3.5vw;
+}
+
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
           HERO Section
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
@@ -481,9 +487,11 @@ Funding Section styling
   }
 
   .sweatpants {
-    display: block;
-    background-color: yellow;
-    padding: 2.5vw 0;
+    font-size: 2vw;
+  }
+
+  .sweatpants span {
+    display: inline-block;
   }
 
   /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
