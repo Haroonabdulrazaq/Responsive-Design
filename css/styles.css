@@ -620,6 +620,10 @@ Funding Section styling
   .footer .icons-links .icons a i {
     font-size: 1.5em;
   }
+
+  .footer-footnote span {
+    display: inline-block;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -753,7 +757,7 @@ Funding Section styling
     height: 44vh;
   }
 
-   /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
   Style for Latest News section
   ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
