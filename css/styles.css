@@ -31,15 +31,16 @@ a {
 }
 
 .round-btn {
-  height: 2em;
-  width: 2em;
-  background-color: #666;
+  height: 2.5em;
+  width: 2.5em;
+  padding: 0.7em 0.6em;
+  background-color: #333;
   border-radius: 50%;
 }
 
 .round-btn:hover {
-  background-color: #333;
-  border: solid 1px #666;
+  background-color: transparent;
+  border: solid 1px #333;
 }
 
 ul li {
@@ -155,6 +156,10 @@ main {
   display: none;
 }
 
+.bg-date {
+  display: none;
+}
+
 .hero-img-1 {
   background: url("../images/roman-kraft-_Zua2hyvTBk-unsplash.jpg");
 }
@@ -251,7 +256,16 @@ Funding Section styling
 .cinchy-anchor h2 {
   display: block;
   padding: 0.6em 5em;
-  font-size: 1.2em;
+  font-size: 1.2em;/* .desk-header-img {
+    height: 90vh;
+  } */
+
+
+
+  /* .desk-header-img2 {
+    height: 44vh;
+  } */
+
   background: #f42;
 }
 
@@ -308,7 +322,7 @@ Funding Section styling
   margin-left: 1em;
 }
 
-.header-img .overlay span {
+.header-img .overlay .app-span {
   color: #888;
   margin-left: 1em;
 }
@@ -351,37 +365,36 @@ Funding Section styling
 /* +++++++++++++++++++++++++++++++Footer++++++++++++++++++++++++++++++++++++++++++ */
 
 .footer {
-  height: 42vh;
+  height: 35vh;
   background: #000;
   color: white;
 }
 
 .footer .icons-links {
-  height: 25vh;
+  height: 20vh;
   background: #131313;
 }
 
 .footer .icons-links .icons {
-  height: 12.5vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 80%;
-  margin: 0 auto;
+  padding: 4.5vh 0 0 0;
 }
 
 .footer .icons-links .icons a {
-  margin: 0 0.3em;
   color: white;
+  text-align: center;
+  margin: 0 0.5vh;
 }
 
 .footer .icons-links .icons a i {
-  margin: 0.6em 0.5em;
   font-size: 1em;
 }
 
 .footer .links {
   height: 10vh;
+  padding: 4vh 0;
 }
 
 .footer .links .footer-links {
@@ -391,14 +404,17 @@ Funding Section styling
 }
 
 .footer .links .footer-links li {
-  padding: 0.5em;
-  margin-top: 1.5em;
+  margin: 0 0.5vh;
+}
+
+.footer .footer-footnote {
+  padding-top: 1.5em;
 }
 
 .footer .footer-footnote span {
   display: block;
   text-align: center;
-  padding-top: 1em;
+  padding-top: 0.3em;
 }
 
 @media only screen and (min-width: 760px) {
@@ -608,20 +624,36 @@ Funding Section styling
       Style for footer
   ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
-  .round-btn {
-    height: 3em;
-    width: 3em;
+  .footer {
+    height: 25vh;
+  }
+
+  .footer .icons-links {
+    height: 15vh;
+    background: #131313;
+  }
+
+  .footer .icons-links .icons {
+    padding: 3.7vh 0 0 0;
   }
 
   .footer .icons-links .icons a {
-    margin: 0 1.3em;
+    color: white;
+    text-align: center;
+    margin: 0 0.7vh;
   }
 
-  .footer .icons-links .icons a i {
-    font-size: 1.5em;
+  .footer .links {
+    height: 10vh;
+    padding: 2.5vh 0;
   }
+  
+  .footer .footer-footnote{
+    text-align: center;
+    padding-top: 2.3em;
+  } 
 
-  .footer-footnote span {
+  .footer .footer-footnote span {
     display: inline-block;
   }
 }
@@ -735,10 +767,18 @@ Funding Section styling
     position: absolute;
     display: inline-block;
     width: 25em;
-    height: 10em;
-    top: 4em;
+    height: 7em;
+    top: 1.5em;
     left: 1.5em;
-    fill: white;
+  }
+  
+  .bg-date {
+    display: inline-block;
+    position: absolute;
+    top: 1.5em;
+    right: 1.5em;
+    color: white;
+    z-index: 3;
   }
 
   .main-wrapper {
@@ -749,13 +789,18 @@ Funding Section styling
     margin-bottom: 2em;
   }
 
-  .desk-header-img {
-    height: 90vh;
+  .hero-img-1 {
+    height: 72vh;
   }
 
-  .desk-header-img2 {
-    height: 44vh;
+  .hero-img-2 {
+    height: 35vh;
   }
+
+  .hero-img-3 {
+    height: 35vh;
+  } 
+
 
   /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
   Style for Latest News section
@@ -830,18 +875,37 @@ Funding Section styling
   /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
       Style for footer
   ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-
-  .icons {
-    justify-content: center;
+   
+  .footer {
+    height: 40vh;
   }
 
-  .footer-footnote {
-    display: flex;
-    justify-content: center;
+  .footer .icons-links {
+    height: 25vh;
+    background: #131313;
   }
 
-  .footer-footnote span {
-    display: inline-block;
-    padding-top: 3em;
+  .footer .icons-links .icons {
+    padding: 7vh 0 0 0;
   }
+
+  .footer .icons-links .icons a {
+    color: white;
+    text-align: center;
+    margin: 0 1.3vh;
+  }
+
+  .footer .links {
+    height: 10vh;
+    padding: 4vh 0;
+  }
+  
+  .footer .links .footer-links li {
+    margin: 0 1vh;
+  }  
+
+  .footer .footer-footnote{
+    text-align: center;
+    padding-top: 2em;
+  } 
 }
