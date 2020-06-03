@@ -256,16 +256,7 @@ Funding Section styling
 .cinchy-anchor h2 {
   display: block;
   padding: 0.6em 5em;
-  font-size: 1.2em;/* .desk-header-img {
-    height: 90vh;
-  } */
-
-
-
-  /* .desk-header-img2 {
-    height: 44vh;
-  } */
-
+  font-size: 1.2em;
   background: #f42;
 }
 
@@ -647,11 +638,11 @@ Funding Section styling
     height: 10vh;
     padding: 2.5vh 0;
   }
-  
-  .footer .footer-footnote{
+
+  .footer .footer-footnote {
     text-align: center;
     padding-top: 2.3em;
-  } 
+  }
 
   .footer .footer-footnote span {
     display: inline-block;
@@ -771,7 +762,7 @@ Funding Section styling
     top: 1.5em;
     left: 1.5em;
   }
-  
+
   .bg-date {
     display: inline-block;
     position: absolute;
@@ -799,8 +790,7 @@ Funding Section styling
 
   .hero-img-3 {
     height: 35vh;
-  } 
-
+  }
 
   /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
   Style for Latest News section
@@ -875,7 +865,7 @@ Funding Section styling
   /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
       Style for footer
   ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-   
+
   .footer {
     height: 40vh;
   }
@@ -899,13 +889,13 @@ Funding Section styling
     height: 10vh;
     padding: 4vh 0;
   }
-  
+
   .footer .links .footer-links li {
     margin: 0 1vh;
-  }  
+  }
 
-  .footer .footer-footnote{
+  .footer .footer-footnote {
     text-align: center;
     padding-top: 2em;
-  } 
+  }
 }
