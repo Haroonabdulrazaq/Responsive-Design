@@ -1,0 +1,901 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #555;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.mb-1 {
+  margin-bottom: 1em;
+}
+
+.pb-0-8 {
+  padding-bottom: 0.8em;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.round-btn {
+  height: 2.5em;
+  width: 2.5em;
+  padding: 0.7em 0.6em;
+  background-color: #333;
+  border-radius: 50%;
+}
+
+.round-btn:hover {
+  background-color: transparent;
+  border: solid 1px #333;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+.heading2 {
+  font-weight: 800;
+  font-size: 2em;
+  padding-bottom: 1em;
+}
+
+.heading2:hover {
+  color: #000;
+}
+
+main {
+  padding: 1em;
+}
+
+.disappear {
+  display: none;
+}
+
+.flex-display {
+  display: flex;
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  Navbar
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.navbar {
+  position: fixed;
+  z-index: 5;
+  height: 15vw;
+}
+
+.logo-black-white {
+  width: 100%;
+  display: flex;
+  height: 15vw;
+  background: firebrick;
+}
+
+.nav-image {
+  width: 15%;
+}
+
+.black-white {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-image img {
+  width: 100%;
+  height: 15vw;
+}
+
+.white-nav {
+  height: 15vw;
+  display: flex;
+  background: white;
+}
+
+.white-left {
+  display: none;
+}
+
+.white-right {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.white-right i {
+  padding: 0 1em 0 0.3em;
+  font-size: 7vw;
+  color: #888;
+  border-left: 1px solid #888;
+  margin-top: 0.7em;
+  margin-bottom: 0.7em;
+}
+
+.ul-white-nav {
+  display: none;
+}
+
+.black-nav {
+  display: none;
+}
+
+.sweatpants {
+  background-color: yellow;
+  padding: 2.5vw 0;
+  font-size: 3.5vw;
+}
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+          HERO Section
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.main-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  height: auto;
+  margin-top: 15vw;
+}
+
+.bg-logo {
+  display: none;
+}
+
+.bg-date {
+  display: none;
+}
+
+.hero-img-1 {
+  background: url("../images/roman-kraft-_Zua2hyvTBk-unsplash.jpg");
+}
+
+.hero-img-2 {
+  background: url("../images/l-5.jpg");
+  background-position: center;
+}
+
+.hero-img-3 {
+  background: url("../images/covid.jpg");
+}
+
+.header-img {
+  background-size: cover;
+  position: relative;
+  height: 30vh;
+  margin-bottom: 1em;
+}
+
+.img-text {
+  position: absolute;
+  bottom: 1em;
+  left: 1em;
+  width: 70%;
+  font-size: 1.2em;
+  font-weight: bolder;
+  color: white;
+}
+
+.news-container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.news {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-gap: 10px;
+}
+
+.news-img img {
+  width: 100%;
+  height: 12vh;
+}
+
+.news-text-author p {
+  font-size: 0.8em;
+  font-weight: bold;
+  line-height: 1.2em;
+  padding-bottom: 0.4em;
+}
+
+.news-text-author span {
+  font-size: 0.8em;
+  color: #888;
+}
+
+/*
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Funding Section styling
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.funding-links {
+  margin-bottom: 1em;
+}
+
+.funding-links li {
+  padding: 0.3em;
+}
+
+.orange {
+  color: #f42;
+}
+
+.cinchy {
+  background: white;
+  position: relative;
+}
+
+.cinchy-anchor {
+  text-decoration: none;
+  color: white;
+}
+
+.cinchy-img {
+  position: absolute;
+  width: 4em;
+  height: 4em;
+  top: 1em;
+  left: 1em;
+}
+
+.cinchy-anchor h2 {
+  display: block;
+  padding: 0.6em 5em;
+  font-size: 1.2em;
+  background: #f42;
+}
+
+.cinchy-anchor h5 {
+  color: #555;
+  font-variant: small-caps;
+}
+
+.series-div {
+  background: rgba(255, 68, 34, 0.08);
+  color: #000;
+  height: 10vh;
+  padding: 0.6em 6em;
+}
+
+.rick {
+  font-size: 0.7em;
+}
+
+.below-cinchy {
+  height: 12vh;
+  padding: 0.5em;
+  border-bottom: 1px solid rgb(241, 173, 173);
+}
+
+.below-cinchy a {
+  padding: 0.5em;
+  display: block;
+}
+
+/*
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  APP SECTION STYLE
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ */
+
+.app-section {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.header-img .overlay h4 {
+  display: inline-block;
+  color: white;
+  margin-top: 8em;
+  margin-left: 1em;
+}
+
+.header-img .overlay .app-img-text {
+  color: white;
+  width: 70%;
+  font-size: 1.2em;
+  font-weight: bolder;
+  margin-left: 1em;
+}
+
+.header-img .overlay .app-span {
+  color: #888;
+  margin-left: 1em;
+}
+
+.app .below-app-image {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+.app .description {
+  padding: 1em;
+  background-color: rgba(255, 68, 34, 0.08);
+}
+
+.app .description h4 {
+  font-size: 0.8em;
+}
+
+.description p {
+  font-size: 0.8em;
+  font-weight: 600;
+}
+
+.app-small-img img {
+  width: 100%;
+  height: 11vh;
+}
+
+.app-features ul li {
+  display: list-item;
+  list-style-type: disc;
+  list-style-position: inside;
+  color: #666;
+}
+
+.latest-deals-header a {
+  margin-left: 3.5em;
+}
+
+/* +++++++++++++++++++++++++++++++Footer++++++++++++++++++++++++++++++++++++++++++ */
+
+.footer {
+  height: 35vh;
+  background: #000;
+  color: white;
+}
+
+.footer .icons-links {
+  height: 20vh;
+  background: #131313;
+}
+
+.footer .icons-links .icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4.5vh 0 0 0;
+}
+
+.footer .icons-links .icons a {
+  color: white;
+  text-align: center;
+  margin: 0 0.5vh;
+}
+
+.footer .icons-links .icons a i {
+  font-size: 1em;
+}
+
+.footer .links {
+  height: 10vh;
+  padding: 4vh 0;
+}
+
+.footer .links .footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .links .footer-links li {
+  margin: 0 0.5vh;
+}
+
+.footer .footer-footnote {
+  padding-top: 1.5em;
+}
+
+.footer .footer-footnote span {
+  display: block;
+  text-align: center;
+  padding-top: 0.3em;
+}
+
+@media only screen and (min-width: 760px) {
+  /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    STYLE FOR NAVBAR
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+  .white-nav-tab-link {
+    display: none;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .nav-image img {
+    width: 100%;
+    height: 15vw;
+  }
+
+  .black-nav {
+    display: flex;
+    width: 100%;
+    height: 5vw;
+    background: #000;
+  }
+
+  .black-nav-left {
+    width: 65%;
+  }
+
+  .black-nav-right {
+    width: 35%;
+  }
+
+  .ul-white-nav li {
+    padding: 3vw 0.5vw 3vw 1vw;
+  }
+
+  .ul-white-nav li a {
+    font-variant: small-caps;
+    color: rgba(150, 150, 150, 0.8);
+    font-size: 2.7vw;
+    cursor: pointer;
+  }
+
+  .ul-white-nav li a:hover {
+    color: #222;
+  }
+
+  .black-nav-right .ul-black-nav {
+    justify-content: flex-end;
+  }
+
+  .black-nav-right .ul-black-nav li,
+  .black-nav-left .ul-black-nav li {
+    padding: 1vw 0.3em;
+  }
+
+  .black-nav-right .ul-black-nav li a,
+  .black-nav-left .ul-black-nav li a {
+    color: white;
+    font-size: 2vw;
+    font-variant: small-caps;
+  }
+
+  .white-nav {
+    display: flex;
+    width: 100%;
+    height: 10vw;
+  }
+
+  .white-nav .white-left {
+    display: block;
+    width: 85%;
+  }
+
+  .white-nav .white-right {
+    width: 15%;
+  }
+
+  .white-left .ul-white-nav {
+    display: flex;
+  }
+
+  .white-right i {
+    font-size: 2.7vw;
+    padding: 2vw 2vw;
+  }
+
+  .sweatpants {
+    font-size: 2vw;
+  }
+
+  .sweatpants span {
+    display: inline-block;
+  }
+
+  /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  Style for top image section
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+  .bg-logo {
+    display: none;
+  }
+
+  .main-wrapper {
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 0.5em;
+    margin-top: 21vw;
+  }
+
+  .hero-img-1 {
+    height: 61vh;
+  }
+
+  .span-2-rows {
+    grid-row-end: span 2;
+  }
+
+  .header-img {
+    margin-bottom: 0;
+    background-position: center;
+    position: relative;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(rgba(218, 43, 43, 0.8), #000);
+    opacity: 0.8;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+
+  .tab-overlay {
+    background: linear-gradient(rgba(218, 43, 43, 0), #000);
+  }
+
+  .text-bg {
+    font-size: 2em;
+  }
+
+  /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  Style for Latest News section
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+  .news-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0.5em;
+  }
+
+  .news {
+    grid-template-columns: 1fr;
+  }
+
+  .news-img img {
+    height: 16vh;
+  }
+
+  /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Style for Funding section
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+  .cinchy4 {
+    display: none;
+  }
+
+  .cinchy-parent {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 0.5em;
+  }
+
+  .cinchy-anchor h2 {
+    padding: 0.6em 0 0 4em;
+  }
+
+  .cinchy-img {
+    top: 0.6em;
+    left: 0.6em;
+  }
+
+  /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Style for App section
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+  .app-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0.5em;
+  }
+
+  .tab-img {
+    background-position: center;
+    height: 20vh;
+  }
+
+  .header-img .overlay .tab-img-text {
+    font-size: 1em;
+  }
+
+  /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Style for footer
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+  .footer {
+    height: 25vh;
+  }
+
+  .footer .icons-links {
+    height: 15vh;
+    background: #131313;
+  }
+
+  .footer .icons-links .icons {
+    padding: 3.7vh 0 0 0;
+  }
+
+  .footer .icons-links .icons a {
+    color: white;
+    text-align: center;
+    margin: 0 0.7vh;
+  }
+
+  .footer .links {
+    height: 10vh;
+    padding: 2.5vh 0;
+  }
+
+  .footer .footer-footnote {
+    text-align: center;
+    padding-top: 2.3em;
+  }
+
+  .footer .footer-footnote span {
+    display: inline-block;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  Style for Navbar
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+  .navbar {
+    width: 100%;
+    height: 6vw;
+  }
+
+  .white-nav-tab-link {
+    display: inline-block;
+  }
+
+  .nav-image {
+    display: none;
+  }
+
+  .logo-black-white {
+    height: 6vw;
+  }
+
+  .black-white {
+    width: 100%;
+    height: 6vw;
+  }
+
+  .black-nav {
+    width: 100%;
+    height: 2.5vw;
+  }
+
+  .black-nav-left {
+    width: 60%;
+  }
+
+  .black-nav-right {
+    width: 40%;
+  }
+
+  .funding-links li {
+    margin-top: 0.5em;
+  }
+
+  .icons a {
+    margin: 0 0.5em;
+  }
+
+  .ul-white-nav li {
+    padding: 0.6vw 0.2vw 0.6vw 1.4vw;
+  }
+
+  .ul-white-nav li a {
+    font-size: 1.5vw;
+    cursor: pointer;
+  }
+
+  .black-nav-right .ul-black-nav li,
+  .black-nav-left .ul-black-nav li {
+    padding: 0.5vw;
+  }
+
+  .black-nav-right .ul-black-nav li a,
+  .black-nav-left .ul-black-nav li a {
+    font-size: 0.8vw;
+    font-variant: normal;
+    text-transform: uppercase;
+  }
+
+  .desktop-first-black-li {
+    margin-left: 1.2vw;
+  }
+
+  .white-nav {
+    width: 100%;
+    height: 3.5vw;
+  }
+
+  .white-nav .white-left {
+    width: 83%;
+  }
+
+  .white-right i {
+    font-size: 1vw;
+    padding: 0.5vw;
+  }
+
+  .sweatpants {
+    padding: 0.5vw 0 0.5vw 1.5vw;
+    font-size: 0.8em;
+  }
+
+  .sweatpants span {
+    display: inline;
+  }
+
+  /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  Style for top image section
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+  .desktop-margin {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .bg-logo {
+    position: absolute;
+    display: inline-block;
+    width: 25em;
+    height: 7em;
+    top: 1.5em;
+    left: 1.5em;
+  }
+
+  .bg-date {
+    display: inline-block;
+    position: absolute;
+    top: 1.5em;
+    right: 1.5em;
+    color: white;
+    z-index: 3;
+  }
+
+  .main-wrapper {
+    display: grid;
+    grid-template-columns: 2.8fr 1.2fr;
+    grid-template-rows: 3fr;
+    margin-top: 7.2vw;
+    margin-bottom: 2em;
+  }
+
+  .hero-img-1 {
+    height: 72vh;
+  }
+
+  .hero-img-2 {
+    height: 35vh;
+  }
+
+  .hero-img-3 {
+    height: 35vh;
+  }
+
+  /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  Style for Latest News section
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+  .news-container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1em;
+    margin-bottom: 2em;
+  }
+
+  .news {
+    grid-template-columns: 1fr;
+  }
+
+  .news-img img {
+    height: 26vh;
+  }
+
+  .news-text-author p {
+    font-size: 1em;
+  }
+
+  /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Style for Funding section
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+  .funding-links-parent {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 1fr;
+  }
+
+  .funding-heading {
+    display: inline-block;
+  }
+
+  .funding-links {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .cinchy4 {
+    display: block;
+  }
+
+  .cinchy-parent {
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1em;
+    margin-bottom: 2em;
+  }
+
+  /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Style for App section
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+  .app-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+  }
+
+  .tab-img {
+    background-position: center;
+    height: 40vh;
+  }
+
+  .header-img .overlay .tab-img-text {
+    font-size: 1em;
+  }
+
+  /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      Style for footer
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+  .footer {
+    height: 40vh;
+  }
+
+  .footer .icons-links {
+    height: 25vh;
+    background: #131313;
+  }
+
+  .footer .icons-links .icons {
+    padding: 7vh 0 0 0;
+  }
+
+  .footer .icons-links .icons a {
+    color: white;
+    text-align: center;
+    margin: 0 1.3vh;
+  }
+
+  .footer .links {
+    height: 10vh;
+    padding: 4vh 0;
+  }
+
+  .footer .links .footer-links li {
+    margin: 0 1vh;
+  }
+
+  .footer .footer-footnote {
+    text-align: center;
+    padding-top: 2em;
+  }
+}
