@@ -28,7 +28,7 @@ The page is a copy of https://thenextweb.com.
 👤 **Author 2**
 
 - Github: [@Haroonabdulrazaq](https://github.com/Haroonabdulrazaq)
-- Linkedin: [@Haroonabdulrazaq](https://www.linkedin.com/in/haroon-abdulrazaq-817906100/)
+- Linkedin: [@Haroonabdulrazaq](https://www.linkedin.com/in/haroonabdulrazaq)
 - Twitter: [@Hanq_o](https://twitter.com/Hanq_o)
 - Email: (Haroonabdulrazaq@gmail.com)
 
